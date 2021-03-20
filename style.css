@@ -26,6 +26,7 @@ body {
   border: 1px solid #c2bebe;
   font-size: 18px;
   font-family: Roboto, 'sans-serif';
+  cursor:pointer;
 }
 
 .target.noactive {
