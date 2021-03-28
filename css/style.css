@@ -1,0 +1,26 @@
+@import "_reset.css";
+@import "_variables.css";
+@import "_global.css";
+@import "_core.css";
+@import "_fonts.css";
+@import "_libs.css";
+
+/*components*/
+@import "components/_overlay.css";
+@import "components/_sticker.css";
+@import "components/_action-bar.css";
+@import "components/_card-product.css";
+@import "components/_form-subscribe.css";
+@import "components/_social.css";
+@import "components/_burger.css";
+
+/*block*/
+@import "blocks/_header.css";
+@import "blocks/_top.css";
+@import "blocks/_specials.css";
+@import "blocks/_content.css";
+@import "blocks/_info.css";
+@import "blocks/_footer.css";
+
+/*Media*/
+@import "_media.css";

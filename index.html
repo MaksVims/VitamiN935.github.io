@@ -3,17 +3,831 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Training site for dev" />
+    <meta name="keywords" content="shop, shoes, sale, new, collection" />
+    <meta name="author" content="Maksim Smetanin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Randomaizer</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Layout | 05</title>
   </head>
   <body>
-    <div class="container">
-      <div class="target noactive">text</div>
-      <button class="btn">Random</button>
-    </div>
+    <div class="site-wrapper">
+      <div class="overlay" data-main-overlay></div>
+      <header class="header" id="home">
+        <div class="header__top">
+          <div class="flex header__top-container container">
+            <a class="logo" href="#">
+              <img class="logo__img" src="img/logo.png" alt="logo" />
+            </a>
+            <div class="header__search">
+              <button class="btn__search" aria-label="search">
+                <svg class="btn__search-svg">
+                  <use href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <button class="btn-header__login" aria-label="login or register">
+                Login <span>or</span> register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__nav" data-fixed-bar>
+          <div class="header__nav-container flex container" data-mobile-menu>
+            <button class="burger" aria-label="open mobile menu"></button>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Pages</a></li>
+                <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="header__cart">
+              <button class="btn__favorites" aria-label="favorites">
+                <svg class="btn__favorites-svg">
+                  <use href="img/sprite.svg#star"></use>
+                </svg>
+                <span class="text-bubbles">30</span>
+              </button>
+              <button class="btn__cart" aria-label="cart">
+                <svg class="btn__cart-svg">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+                <span class="text-bubbles text-bubbles--brand">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <h1 class="non__visible">Product shop</h1>
+        <section class="top">
+          <div class="slider">
+            <div class="slider__container swiper-container" data-slider-top>
+              <ul class="slider__wrapper swiper-wrapper">
+                <li class="slide swiper-slide">
+                  <div class="slide__bg">
+                    <img src="img/bg-top-slider_1.jpg" alt="bg-top-slider" />
+                  </div>
+                  <div class="flex container">
+                    <div class="slide__left"></div>
+                    <div class="slide__content">
+                      <div class="slide__sticker sticker">$145,99</div>
+                      <div class="slide__text">
+                        <h2 class="slide__tittle">Pink Shoes 2021 Collection</h2>
+                        <p class="slide__desc">
+                          Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu
+                          orci. Donec dignissim dolor eget..
+                        </p>
+                      </div>
+                      <div class="action-bar slide__action-bar">
+                        <ul class="action-bar__list">
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="view product">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#view"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="add in favorites">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="share link">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#share"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button
+                              class="action-bar__btn action-bar__btn--cart"
+                              aria-label="add product in cart"
+                            >
+                              <svg class="action-bar__svg action-bar__svg--cart">
+                                <use href="img/sprite.svg#in_cart"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide swiper-slide">
+                  <div class="slide__bg">
+                    <img src="img/bg-top-slider_1.jpg" alt="bg-top-slider" />
+                  </div>
+                  <div class="flex container">
+                    <div class="slide__left"></div>
+                    <div class="slide__content">
+                      <div class="slide__sticker sticker">$145,99</div>
+                      <div class="slide__text">
+                        <h2 class="slide__tittle">Pink Shoes 2021 Collection</h2>
+                        <p class="slide__desc">
+                          Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu
+                          orci. Donec dignissim dolor eget..
+                        </p>
+                      </div>
+                      <div class="action-bar slide__action-bar">
+                        <ul class="action-bar__list">
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="view product">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#view"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="add in favorites">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="share link">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#share"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button
+                              class="action-bar__btn action-bar__btn--cart"
+                              aria-label="add product in cart"
+                            >
+                              <svg class="action-bar__svg action-bar__svg--cart">
+                                <use href="img/sprite.svg#in_cart"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide swiper-slide">
+                  <div class="slide__bg">
+                    <img src="img/bg-top-slider_1.jpg" alt="bg-top-slider" />
+                  </div>
+                  <div class="flex container">
+                    <div class="slide__left"></div>
+                    <div class="slide__content">
+                      <div class="slide__sticker sticker">$145,99</div>
+                      <div class="slide__text">
+                        <h2 class="slide__tittle">Pink Shoes 2021 Collection</h2>
+                        <p class="slide__desc">
+                          Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu
+                          orci. Donec dignissim dolor eget..
+                        </p>
+                      </div>
+                      <div class="action-bar slide__action-bar">
+                        <ul class="action-bar__list">
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="view product">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#view"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="add in favorites">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="share link">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#share"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button
+                              class="action-bar__btn action-bar__btn--cart"
+                              aria-label="add product in cart"
+                            >
+                              <svg class="action-bar__svg action-bar__svg--cart">
+                                <use href="img/sprite.svg#in_cart"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide swiper-slide">
+                  <div class="slide__bg">
+                    <img src="img/bg-top-slider_1.jpg" alt="bg-top-slider" />
+                  </div>
+                  <div class="flex container">
+                    <div class="slide__left"></div>
+                    <div class="slide__content">
+                      <div class="slide__sticker sticker">$145,99</div>
+                      <div class="slide__text">
+                        <h2 class="slide__tittle">Pink Shoes 2021 Collection</h2>
+                        <p class="slide__desc">
+                          Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu
+                          orci. Donec dignissim dolor eget..
+                        </p>
+                      </div>
+                      <div class="action-bar slide__action-bar">
+                        <ul class="action-bar__list">
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="view product">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#view"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="add in favorites">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="share link">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#share"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button
+                              class="action-bar__btn action-bar__btn--cart"
+                              aria-label="add product in cart"
+                            >
+                              <svg class="action-bar__svg action-bar__svg--cart">
+                                <use href="img/sprite.svg#in_cart"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide swiper-slide">
+                  <div class="slide__bg">
+                    <img src="img/bg-top-slider_1.jpg" alt="bg-top-slider" />
+                  </div>
+                  <div class="flex container">
+                    <div class="slide__left"></div>
+                    <div class="slide__content">
+                      <div class="slide__sticker sticker">$145,99</div>
+                      <div class="slide__text">
+                        <h2 class="slide__tittle">Pink Shoes 2021 Collection</h2>
+                        <p class="slide__desc">
+                          Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu
+                          orci. Donec dignissim dolor eget..
+                        </p>
+                      </div>
+                      <div class="action-bar slide__action-bar">
+                        <ul class="action-bar__list">
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="view product">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#view"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="add in favorites">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button class="action-bar__btn" aria-label="share link">
+                              <svg class="action-bar__svg">
+                                <use href="img/sprite.svg#share"></use>
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="action-bar__item">
+                            <button
+                              class="action-bar__btn action-bar__btn--cart"
+                              aria-label="add product in cart"
+                            >
+                              <svg class="action-bar__svg action-bar__svg--cart">
+                                <use href="img/sprite.svg#in_cart"></use>
+                              </svg>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="slider__pagination">
+                <div class="container" data-slider-top-pagination></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <script src="index.js"></script>
+        <section class="specials">
+          <h2 class="non__visible">Specials offers</h2>
+          <div class="specials__container container">
+            <ul class="flex special__list">
+              <li class="special__item">
+                <article class="special__card card">
+                  <a class="special__card-link" href="#">
+                    <img class="card__img" src="img/card-specials_1.jpg" alt="special" />
+                    <h3 class="card__tittle">on sale</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="special__item">
+                <article class="special__card card">
+                  <a class="special__card-link" href="#">
+                    <img class="card__img" src="img/card-specials_2.jpg" alt="special" />
+                    <h3 class="card__tittle">special offers</h3>
+                  </a>
+                </article>
+              </li>
+              <li class="special__item">
+                <article class="special__card card">
+                  <a class="special__card-link" href="#">
+                    <img class="card__img" src="img/card-specials_3.jpg" alt="special" />
+                    <h3 class="card__tittle">must have</h3>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content" id="products">
+          <div class="container">
+            <div class="content__products">
+              <div class="flex content__top">
+                <h2 class="content__title">New arrivals on FooseShoes</h2>
+                <a class="content__link link__show-all" href="#">Show All</a>
+              </div>
+              <ul class="content__products-list product__list">
+                <li class="product__item card-product">
+                  <div class="card-product__img">
+                    <img src="img/card-product_1.jpg" alt="product" />
+                  </div>
+                  <div class="card-product__bar">
+                    <div class="card-product__sticker sticker">$145,99</div>
+                    <h3 class="card-product__name">Even&Odd</h3>
+                    <ul class="card-product__action-bar action-bar__list">
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="view product">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#view"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="add in favorites">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="share link">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button
+                          class="action-bar__btn action-bar__btn--cart"
+                          aria-label="add product in cart"
+                        >
+                          <svg class="action-bar__svg action-bar__svg--cart">
+                            <use href="img/sprite.svg#in_cart"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="product__item card-product">
+                  <div class="card-product__img">
+                    <img src="img/card-product_1.jpg" alt="product" />
+                  </div>
+                  <div class="card-product__bar">
+                    <div class="card-product__sticker sticker">$145,99</div>
+                    <h3 class="card-product__name">Even&Odd</h3>
+                    <ul class="card-product__action-bar action-bar__list">
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="view product">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#view"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="add in favorites">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="share link">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button
+                          class="action-bar__btn action-bar__btn--cart"
+                          aria-label="add product in cart"
+                        >
+                          <svg class="action-bar__svg action-bar__svg--cart">
+                            <use href="img/sprite.svg#in_cart"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sticker sticker--sale card-product__sticker--sale">On Sale</div>
+                </li>
+                <li class="product__item card-product">
+                  <div class="card-product__img">
+                    <img src="img/card-product_1.jpg" alt="product" />
+                  </div>
+                  <div class="card-product__bar">
+                    <div class="card-product__sticker sticker">$145,99</div>
+                    <h3 class="card-product__name">Buffalo Decollete</h3>
+                    <ul class="card-product__action-bar action-bar__list">
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="view product">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#view"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="add in favorites">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="share link">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button
+                          class="action-bar__btn action-bar__btn--cart"
+                          aria-label="add product in cart"
+                        >
+                          <svg class="action-bar__svg action-bar__svg--cart">
+                            <use href="img/sprite.svg#in_cart"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="content__products">
+              <div class="flex content__top">
+                <h2 class="content__title">Best sellers of the month</h2>
+                <a class="content__link link__show-all" href="#">Show All</a>
+              </div>
+              <ul class="content__products-list product__list">
+                <li class="product__item card-product">
+                  <div class="card-product__img">
+                    <img src="img/card-product_2.jpg" alt="product" />
+                  </div>
+                  <div class="card-product__bar">
+                    <div class="card-product__sticker sticker">$145,99</div>
+                    <h3 class="card-product__name">Even&Odd</h3>
+                    <ul class="card-product__action-bar action-bar__list">
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="view product">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#view"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="add in favorites">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="share link">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button
+                          class="action-bar__btn action-bar__btn--cart"
+                          aria-label="add product in cart"
+                        >
+                          <svg class="action-bar__svg action-bar__svg--cart">
+                            <use href="img/sprite.svg#in_cart"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="product__item card-product">
+                  <div class="card-product__img">
+                    <img src="img/card-product_2.jpg" alt="product" />
+                  </div>
+                  <div class="card-product__bar">
+                    <div class="card-product__sticker sticker">$145,99</div>
+                    <h3 class="card-product__name">Even&Odd</h3>
+                    <ul class="card-product__action-bar action-bar__list">
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="view product">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#view"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="add in favorites">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="share link">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button
+                          class="action-bar__btn action-bar__btn--cart"
+                          aria-label="add product in cart"
+                        >
+                          <svg class="action-bar__svg action-bar__svg--cart">
+                            <use href="img/sprite.svg#in_cart"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="product__item card-product">
+                  <div class="card-product__img">
+                    <img src="img/card-product_2.jpg" alt="product" />
+                  </div>
+                  <div class="card-product__bar">
+                    <div class="card-product__sticker sticker">$145,99</div>
+                    <h3 class="card-product__name">Buffalo Decollete</h3>
+                    <ul class="card-product__action-bar action-bar__list">
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="view product">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#view"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="add in favorites">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#star"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button class="action-bar__btn" aria-label="share link">
+                          <svg class="action-bar__svg">
+                            <use href="img/sprite.svg#share"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="action-bar__item">
+                        <button
+                          class="action-bar__btn action-bar__btn--cart"
+                          aria-label="add product in cart"
+                        >
+                          <svg class="action-bar__svg action-bar__svg--cart">
+                            <use href="img/sprite.svg#in_cart"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sticker sticker--stock card-product__sticker--stock">
+                    Out of <br />
+                    Stock
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <section class="content__info info" id="blog">
+              <div class="info__grid grid">
+                <div class="info__item">
+                  <h3 class="info__title">Free Shipping</h3>
+                  <p class="info__text text">
+                    Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos. Donec erat sem,
+                  </p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__title">Testimonials</h3>
+                  <p class="info__text text testimonial">
+                    vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit
+                  </p>
+                  <address class="info__author">- John Doe -</address>
+                </div>
+                <div class="info__item news">
+                  <h3 class="info__title">Blog News</h3>
+                  <ul class="news__list">
+                    <li class="news__item">
+                      <div class="sticker news__item-sticker sticker--news">
+                        Apr <br />
+                        01
+                      </div>
+                      <div class="news__content">
+                        <h4 class="news__title">
+                          <a class="news__link link" href="#">
+                            Nice & clean. The best for you blog!
+                          </a>
+                        </h4>
+                        <p class="news__desc text">
+                          Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="news__item">
+                      <div class="sticker news__item-sticker sticker--news">
+                        Apr <br />
+                        01
+                      </div>
+                      <div class="news__content">
+                        <h4 class="news__title">
+                          <a class="news__link link" href="#">
+                            Nice & clean. The best for you blog!
+                          </a>
+                        </h4>
+                        <p class="news__desc text">
+                          Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__widget">
+          <div class="sub-container">
+            <ul class="footer__widget-list">
+              <li class="footer__widget-item">
+                <h2 class="footer__title">Text Widget</h2>
+                <p class="footer__text text">
+                  Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id
+                  nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus
+                  posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor
+                  ligula, eget lacinia odio sem nec elit.
+                </p>
+              </li>
+              <li class="footer__widget-item twitter">
+                <h2 class="footer__title">Twitter Widget</h2>
+                <ul class="footer__twitter-list">
+                  <li class="footer__twitter-item">
+                    <p class="footer__text text twitter__text">
+                      <a class="link" href="#">@ericafustero</a> Why thank you. Your work looks
+                      awesome by the way! <a class="link" href="#">@treemelody</a>
+                    </p>
+                    <cite class="footer__date twitter__date">19 days ago</cite>
+                  </li>
+                  <li class="footer__twitter-item">
+                    <p class="footer__text text twitter__text">
+                      <a class="link" href="#">@ericafustero</a> Why thank you. Your work looks
+                      awesome by the way!
+                    </p>
+                    <cite class="footer__date twitter__date">21 days ago</cite>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__widget-item">
+                <h2 class="footer__title">Flickr Widget</h2>
+                <div class="footer__widget-img">
+                  <img src="img/vidget.png" alt="widgets" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contact" id="contact">
+          <div class="sub-container contact__sub-container">
+            <form action="/" class="form-subscribe" name="form-subscribe">
+              <input
+                class="form-subscribe__input"
+                type="text"
+                placeholder="Enter email for newsletter"
+                maxlength="50"
+                required
+              />
+              <button class="form-subscribe__submit" type="submit" aria-label="subscribe">
+                <svg class="form-subscribe__svg">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </form>
+            <ul class="footer__social social social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="facebook">
+                  <svg class="social__svg">
+                    <use href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="twitter">
+                  <svg class="social__svg">
+                    <use href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="google plus">
+                  <svg class="social__svg">
+                    <use href="img/sprite.svg#google__plus"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="leakedin">
+                  <svg class="social__svg">
+                    <use href="img/sprite.svg#leakedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="fiskr">
+                  <svg class="social__svg">
+                    <use href="img/sprite.svg#fiskr"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-container container">
+            <div class="footer__copyright">
+              <p class="copyright">Copyright &copy; Fooseshoes 2021.</p>
+              <p class="copyright">Designed by EnzoLiVolti.</p>
+            </div>
+            <ul class="flex footer__menu-list">
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link link">Home</a></li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link">Support</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link">Terms and Conditions</a>
+              </li>
+              <li class="footer__menu-item"><a href="#" class="footer__menu-link link">Faqs</a></li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="libs/swiper.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

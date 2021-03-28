@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/aller_std_bd-webfont.woff2'), url('../fonts/aller_std_bd-webfont.woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/aller_std_it-webfont.woff2'), url('../fonts/aller_std_it-webfont.woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/aller_std_lt-webfont.woff2'), url('../fonts/aller_std_lt-webfont.woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aller';
+  src: url('../fonts/aller_std_rg-webfont.woff2'), url('../fonts/aller_std_rg-webfont.woff');
+  font-weight: 400;
+  font-style: normal;
+}

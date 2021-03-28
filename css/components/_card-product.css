@@ -1,0 +1,61 @@
+.card-product {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-product__bar {
+  position: relative;
+  border-top: 1px solid var(--light-color);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.card-product__sticker {
+  position: absolute;
+  bottom: 0;
+  left: 11px;
+}
+
+.card-product__action-bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+  padding-right: 2.6rem;
+  padding-bottom: 3px;
+  transition: transform .5s;
+  transform: translateY(500px);
+}
+
+.card-product:hover .card-product__action-bar{
+  transform: translateY(0);
+  transition: transform .5s;
+}
+
+.card-product:hover .card-product__name {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.card-product__action-bar .action-bar__svg {
+  width: 15px;
+  height: 15px;
+}
+
+.card-product__name {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-left: 95px;
+}
+
+.card-product__sticker--sale, .card-product__sticker--stock {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}

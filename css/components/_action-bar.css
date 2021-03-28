@@ -1,0 +1,46 @@
+
+.action-bar__list {
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.action-bar__btn {
+  outline: none;
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s;
+}
+
+.action-bar__svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--light-color);
+  transition: fill .3s;
+}
+
+.action-bar__btn--cart:hover, .action-bar__btn--cart:focus {
+  background-color: #fff;
+  transition: background-color .3s;
+}
+
+.action-bar__btn--cart:hover .action-bar__svg--cart,
+.action-bar__btn--cart:focus .action-bar__svg--cart{
+  transform: rotateZ(-10deg);
+  transition: transform .3s;
+}
+
+.action-bar__svg--cart {
+  fill: var(--brand-color);
+  transition: transform .3s;
+}
+
+.action-bar__btn:hover .action-bar__svg,
+.action-bar__btn:focus .action-bar__svg {
+  fill: var(--brand-color);
+  transition: fill .3s;
+}

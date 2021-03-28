@@ -1,0 +1,49 @@
+.form-subscribe{
+  display: flex;
+}
+
+.form-subscribe__input {
+  outline: none;
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  color: #a4a4a4;
+  background-color: var(--dark-color);
+  min-width: 215px;
+  border: 1px solid transparent;
+  border-right: none;
+  transition: border .3s;
+}
+
+.form-subscribe__submit {
+  outline: none;
+  height: 37px;
+  width: 37px;
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s;
+}
+
+.form-subscribe__svg {
+  fill: var(--dark-color);
+  transition: fill .3s;
+  width: 8px;
+  height: 14px;
+}
+
+.form-subscribe__submit:hover, .form-subscribe__submit:focus {
+  background-color: var(--black-color);
+}
+
+.form-subscribe__submit:hover .form-subscribe__svg,
+.form-subscribe__submit:focus .form-subscribe__svg {
+  fill: var(--light-color);
+}
+
+.form-subscribe__input:focus {
+  border: 1px solid var(--light-color);
+  border-right: none;
+  transition: border .3s;
+}
+

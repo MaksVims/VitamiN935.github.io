@@ -1,0 +1,51 @@
+.specials {
+  background-color: var(--black-color);
+  padding-top: 1.7%;
+  padding-bottom: 0.5%;
+}
+
+.special__list {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.special__item {
+  height: 100%;
+  flex: 0 1 32%;
+}
+
+.special__card {
+  background-color: #000;
+  position: relative;
+}
+
+.special__card-link {
+  width: 100%;
+  height: 100%;
+}
+
+.specials__container {
+  min-height: 200px;
+}
+
+.card__tittle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.9;
+  background-color: var(--black-color);
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+  min-width: 180px;
+  padding: 15px 25px;
+  max-width: 80%;
+}
+
+.card__img {
+  width: 100%;
+}

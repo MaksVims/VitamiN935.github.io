@@ -1,0 +1,100 @@
+.footer {
+  background-color: #242424;
+  padding-top: 3.2%;
+  color: #a4a4a4;
+}
+
+.footer__widget {
+  margin-bottom: 2%;
+}
+
+.footer__widget-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__widget-item {
+  flex: 1 1 20%;
+  text-align: justify;
+}
+
+.footer__widget-item:not(:last-child) {
+  margin-right: 5.4%;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.footer__text {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.twitter__text {
+  font-style: italic;
+  line-height: 1.8rem;
+  margin-bottom: .8rem;
+}
+
+.twitter__text a {
+  color: var(--brand-color);
+}
+
+.twitter__date {
+  display: block;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.footer__twitter-item:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+/*Contact*/
+
+.footer__contact {
+  border-top: 1px solid black;
+  padding-top: 2.5%;
+  padding-bottom: 3.2%;
+}
+
+.contact__sub-container {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Copyright*/
+
+.footer__bottom {
+  background-color: var(--dark-color);
+  padding-top: 1.7%;
+  padding-bottom: 1.7%;
+  color: var(--light-color);
+}
+
+.footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-size: 1.2rem;
+}
+
+.footer__menu-item:not(:last-child):after {
+  content: ' / ';
+  display: inline-block;
+  color: var(--light-color);
+  margin: 0 5px;
+}
+
+.footer__menu-link {
+  font-size: 1.2rem;
+  outline: none;
+}

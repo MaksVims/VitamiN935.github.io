@@ -1,0 +1,140 @@
+.header__top {
+  background-color: var(--black-color);
+  position: relative;
+  z-index: 100;
+}
+
+.header__top-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav.bar--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__nav {
+  background-color: #fff;
+  z-index: 100;
+}
+
+.header__nav-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  max-height: 26px;
+}
+
+.btn__search {
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.btn__search-svg {
+  fill: var(--semi-dark-color);
+  width: 16px;
+  height: 15px;
+  transition: fill .3s;
+}
+
+.btn-header__login {
+  color: var(--semi-dark-color);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding: 10px 23px;
+  text-align: center;
+  border-right: 1px solid var(--semi-light-color);
+  border-left: 1px solid var(--semi-light-color);
+  transition: color .3s;
+}
+
+.btn__search, .btn-header__login {
+  outline: none;
+}
+
+.btn-header__login:hover,
+.btn-header__login:focus {
+  color: #fff;
+  transition: color .3s;
+}
+
+.btn__search:hover .btn__search-svg,
+.btn__search:focus .btn__search-svg {
+  fill: #fff;
+}
+
+.btn-header__login span {
+  text-transform: lowercase;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  color: var(--black-color);
+}
+
+.nav__link {
+  outline: none;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  padding: 2rem;
+  border-left: 1px solid var(--semi-light-color);
+  letter-spacing: 1px;
+  transition: background-color .3s;
+}
+
+.nav__item:last-child .nav__link{
+  border-right: 1px solid var(--semi-light-color);
+}
+
+.nav__link:hover, .nav__link:focus {
+  background-color: var(--semi-light-color);
+  transition: background-color .3s;
+}
+
+.header__cart {
+  display: flex;
+  align-items: center;
+}
+
+.btn__favorites, .btn__cart {
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 18px 20px;
+  border-right: 1px solid var(--semi-light-color);
+  border-left: 1px solid var(--semi-light-color);
+}
+
+.btn__cart {
+  border-left: none;
+}
+
+.btn__favorites-svg,.btn__cart-svg {
+  width: 17px;
+  height: 17px;
+  fill: var(--light-color);
+  margin-right: 10px;
+  transition: fill .3s;
+}
+
+.btn__cart:focus .btn__cart-svg,
+.btn__cart:hover .btn__cart-svg,
+.btn__favorites:focus .btn__favorites-svg,
+.btn__favorites:hover .btn__favorites-svg{
+  fill: var(--brand-color);
+}

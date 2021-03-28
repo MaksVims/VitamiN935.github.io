@@ -1,0 +1,38 @@
+.social__list {
+  display: flex;
+  align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.social__link {
+  outline: none;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  transition: background-color .3s;
+}
+
+.social__svg {
+  fill: var(--light-color);
+  transition: fill .3s;
+  width: 22px;
+  height: 22px;
+}
+
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--light-color);
+  transition: background-color .3s;
+}
+.social__link:hover .social__svg,
+.social__link:focus .social__svg {
+  fill: var(--dark-color);
+  transition: fill .3s;
+}
